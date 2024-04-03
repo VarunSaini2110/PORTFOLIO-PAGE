@@ -1,0 +1,170 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: url("1526003.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Change to your desired hover color */
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .nav-open {
+    display: block;
+  }
+
+  .nav ul {
+    display: block;
+  }
+
+  .nav ul li {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.project {
+  margin-bottom: 50px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-list li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 8px 20px;
+  background-color: rgba(255, 215, 0, 0.8); /* semi-transparent gold */
+  color: #333;
+  border-radius: 20px;
+}
+
+.testimonial {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.testimonial .author {
+  font-style: italic;
+}
+
+button {
+  background-color: rgba(255, 215, 0, 0.8); /* semi-transparent gold */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd700; /* Change to your desired button hover color */
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
